@@ -8,14 +8,18 @@ body{
     margin: 0;
     font-family: "Roboto", sans-serif;
     
+    
 } 
 
 .navbar{
     display: flex;
     height: 100px;
-    /* background-color: #0edfa0;  */
+    background-color: white;  
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 
 }
 
@@ -28,7 +32,7 @@ body{
 
 .logo h1{
     font-family: "Lobster", sans-serif;
-    color:blueviolet;
+    color:#98CA3C;
     font-size: 34px;
 
 }
@@ -41,19 +45,19 @@ body{
 }
 
 .menu a{
-      color:blueviolet;
+      color:#98CA3C;
       text-decoration: none;
       font-size: 20px;
       padding: 20px 16px;
 
 }
 .menu a:hover{
-    color: pink;
-    border-top:4px solid rgba(6, 7, 85, 0.685);
+    color: #F78F25;
+    border-top:4px solid #98CA3C;
 }
 
 #botao{
-    background-color: rgba(6, 7, 85, 0.685);
+    background-color: #F78F25;
     padding: 10px 25px;
     color: white;
     border-radius: 5px; 
@@ -63,7 +67,7 @@ body{
 }
 #botao:hover{
     border:none;
-    background: pink;
+    background: #98CA3C;
 }
 
 .header{
@@ -73,6 +77,8 @@ body{
     align-items: center;
     justify-content: center; 
     /* padding: 0 10%; */
+    padding-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .headline{
@@ -87,7 +93,7 @@ body{
 .headline h2{
     font-weight: 900;
     font-size: 20px;
-    color:blueviolet;
+    color:#98CA3C;
     padding: 0;
     margin:0;
 }
@@ -100,7 +106,7 @@ body{
 
 .contatic-btn{
     display: inline-block;
-    background-color: deeppink;
+    background-color: #F78F25;
     padding: 20px;
     color: white;
     text-transform: uppercase;
@@ -109,7 +115,7 @@ body{
 }
 
 .contatic-btn:hover{
-    background-color: blueviolet;
+    background-color: #98CA3C;
 }
 
 .img-headline{
@@ -122,10 +128,10 @@ body{
 section{
     display: inline-block;
     margin-top: 80px;
-    border:1px solid black;
+    /* border:1px solid black; */
     margin-left: 5%;
     margin-right: 5%;
-    height: 400px;
+    height: 800px;
     text-align: center;
     padding: 5%;
     width: 90%;
@@ -137,7 +143,7 @@ section h2{
     margin: 0;
     font-family: "Lobster", sans-serif;
     font-weight: bold;
-    color: blueviolet;
+    color: #98CA3C;
 }
 
 .servicos{
@@ -151,13 +157,20 @@ section h2{
     width: 30%;
     padding: 20px;
     margin: 1%;
-    border:1px solid black;
+     border:1px solid #98CA3C; 
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 } 
+.texto-oculto{
+    display: none;
+    
+
+}
 
 .card:hover{
-    background-color: blueviolet;
+    background-color: #98CA3C;
     color: white;
     padding: 40px;
 }
@@ -174,10 +187,23 @@ section h2{
 .card:hover .texto-oculto{
     display: block;
 }
-.texto-oculto{
-    display: none;
+
+footer{
+    margin-top: 100px;
+    height: 200px;
+    background-image: linear-gradient(90deg, #8C8882, #C2BBAA, #D5CAB1, #F48D20);
+    text-align: center;
+    border-top :5px solid black;
 
 }
-   
-    
-    
+.logo-rodape{
+    padding: 100px;
+    color: white;
+}
+.agencia{
+    font-family: "Lobster", sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 34px;
+
+}
+  

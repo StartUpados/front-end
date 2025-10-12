@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 80px;
+    padding: 0 5%;
+    background-color: #8C8882; /* cor de fundo da barra */
+    position: fixed; /* fixa no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* fica acima do conteúdo */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra elegante */
+}
+
+/* Logo */
+.logo h1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 28px;
+    color: white;
+    margin: 0;
+}
+
+/* Menu */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+/* Hover nos links */
+.menu a:hover {
+    color: #F78F25; 
+    border-top: 4px solid #98CA3C; 
+    padding-top: 4px; 
+}
+
+/* Botão especial */
+#botao {
+    background-color: #F78F25;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+
+#botaoe:hover {
+    background-color: #98CA3C;
+    color: #333;
+    border: none;
+}
+.header{
+   height: auto;
+   background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    /* padding: 0 10%; */
+    padding-top: 100px;
+    /* margin-top: 100px; */
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  margin: top 50px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  background: #0078d7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+footer{
+    margin-top: 100px;
+    height: 200px;
+    background-image: linear-gradient(90deg, #8C8882, #C2BBAA, #D5CAB1, #F48D20);
+    text-align: center;
+    border-top :5px solid black;
+
+}
+.logo-rodape{
+    padding: 100px;
+    color: white;
+}
+.agencia{
+    font-family: "Lobster", sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 34px;
+
+}
+  
