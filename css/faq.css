@@ -1,23 +1,26 @@
-body{
+body {
     font-family: "Roboto", sans-serif;
     background-color: #f9fafc;
     line-height: 1.6;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
+
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: flex-start; 
     align-items: center;
     height: 80px;
     padding: 0 5%;
-    background-color: #8C8882; /* cor de fundo da barra */
-    position: fixed; /* fixa no topo */
+    background-color: #111; /* preto elegante */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* fica acima do conteúdo */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra elegante */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 /* Logo */
@@ -30,89 +33,80 @@ body{
 
 /* Menu */
 .menu a {
-    color: white;
+    color: #ddd;
     text-decoration: none;
     font-size: 18px;
     margin-left: 20px;
     padding: 8px 12px;
     transition: all 0.3s ease;
 }
-
-/* Hover nos links */
 .menu a:hover {
-    color: #F78F25; 
-    border-top: 4px solid #98CA3C; 
+    color: #fff; 
+    border-top: 3px solid #555; 
     padding-top: 4px; 
 }
 
 /* Botão especial */
 #botao {
-    background-color: #F78F25;
+    background-color: #333;
     color: white;
     border-radius: 5px;
     padding: 10px 20px;
     margin-left: 20px;
+    transition: 0.3s;
+}
+#botao:hover {
+    background-color: #555;
 }
 
-#botao:hover {
-    background-color: #98CA3C;
-    color: #333;
-    border: none;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #98CA3C;
-    color: white;
-    padding: 15px 40px;
-}
-h1{
+/* Títulos */
+h1 {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-top: 120px;
     text-align: center;
 }
-h2{
+h2 {
     font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h3 {
+    font-size: 1.4em;
     margin-bottom: 10px;
     text-align: center;
 }
-h3{
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    text-align: center;
+
+/* FAQ */
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
-.pergunta{
-    color: #F78F25;
+.pergunta {
+    color: #111;
     text-align: center;
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.resposta{
-    color: #98CA3C;
+.resposta {
     margin-top: 10px;
     color: #555;
     font-size: 1em;
 }
-.faq{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-}
-footer{
+
+/* Rodapé */
+footer {
     margin-top: 100px;
     height: 200px;
-    background-image: linear-gradient(90deg, #8C8882, #C2BBAA, #D5CAB1, #F48D20);
+    background: #111;
     text-align: center;
-    border-top :5px solid black;
+    border-top: 5px solid #333;
 }
-.agencia{
+.agencia {
     font-family: "Lobster", sans-serif;
-    color:rgb(255, 255, 255);
+    color: #fff;
     font-size: 34px;
-
 }

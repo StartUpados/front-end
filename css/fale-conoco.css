@@ -5,32 +5,33 @@ body {
   padding: 0;
 }
 
+/* Barra de navegação */
 .navbar {
     display: flex;
     justify-content: flex-start; 
     align-items: center;
     height: 80px;
     padding: 0 5%;
-    background-color: #8C8882; /* cor de fundo da barra */
-    position: fixed; /* fixa no topo */
+    background-color: #111; /* preto elegante */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* fica acima do conteúdo */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra elegante */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 /* Logo */
 .logo h1 {
     font-family: "Lobster", sans-serif;
     font-size: 28px;
-    color: white;
+    color: #fff;
     margin: 0;
 }
 
 /* Menu */
 .menu a {
-    color: white;
+    color: #ddd;
     text-decoration: none;
     font-size: 18px;
     margin-left: 20px;
@@ -40,55 +41,53 @@ body {
 
 /* Hover nos links */
 .menu a:hover {
-    color: #F78F25; 
-    border-top: 4px solid #98CA3C; 
+    color: #fff; 
+    border-top: 3px solid #555; 
     padding-top: 4px; 
 }
 
 /* Botão especial */
 #botao {
-    background-color: #F78F25;
+    background-color: #333;
     color: white;
     border-radius: 5px;
     padding: 10px 20px;
     margin-left: 20px;
+    transition: 0.3s;
+}
+#botao:hover {
+    background-color: #555;
 }
 
-#botaoe:hover {
-    background-color: #98CA3C;
-    color: #333;
-    border: none;
-}
-.header{
+/* Header */
+.header {
    height: auto;
-   background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    /* padding: 0 10%; */
-    padding-top: 100px;
-    /* margin-top: 100px; */
+   background: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   padding-top: 100px;
 }
 
+/* Container do formulário */
 .container {
   width: 100%;
   max-width: 600px;
   margin: 50px auto;
-  margin: top 50px;
   background: #fff;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #111;
 }
 
 p {
   text-align: center;
-  color: #666;
+  color: #555;
 }
 
 form {
@@ -106,7 +105,7 @@ input, textarea {
 
 button {
   padding: 12px;
-  background: #0078d7;
+  background: #111;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -116,25 +115,23 @@ button {
 }
 
 button:hover {
-  background: #005fa3;
+  background: #444;
 }
 
-footer{
+/* Rodapé */
+footer {
     margin-top: 100px;
-    height: 200px;
-    background-image: linear-gradient(90deg, #8C8882, #C2BBAA, #D5CAB1, #F48D20);
+    height: 180px;
+    background: #111;
     text-align: center;
-    border-top :5px solid black;
-
+    border-top: 5px solid #333;
 }
-.logo-rodape{
-    padding: 100px;
+.logo-rodape {
+    padding: 0px;
     color: white;
 }
-.agencia{
+.agencia {
     font-family: "Lobster", sans-serif;
-    color:rgb(255, 255, 255);
+    color: #fff;
     font-size: 34px;
-
 }
-  
