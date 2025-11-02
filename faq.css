@@ -1,0 +1,112 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f9fafc;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 80px;
+    padding: 0 5%;
+    background-color: #111; /* preto elegante */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.logo h1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 28px;
+    color: white;
+    margin: 0;
+}
+
+/* Menu */
+.menu a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+.menu a:hover {
+    color: #fff; 
+    border-top: 3px solid #555; 
+    padding-top: 4px; 
+}
+
+/* Botão especial */
+#botao {
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+#botao:hover {
+    background-color: #555;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5em;
+    margin-top: 120px;
+    text-align: center;
+}
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* FAQ */
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.pergunta {
+    color: #111;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.resposta {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1em;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 100px;
+    height: 200px;
+    background: #111;
+    text-align: center;
+    border-top: 5px solid #333;
+}
+.agencia {
+    font-family: "Lobster", sans-serif;
+    color: #fff;
+    font-size: 34px;
+}
