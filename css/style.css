@@ -39,7 +39,7 @@ body {
 
 .logo h1 {
     font-family: "Lobster", sans-serif;
-    color: #2c3e50;
+    color: #077cf0;
     font-size: 34px;
     font-weight: normal;
 }
@@ -53,7 +53,7 @@ body {
 }
 
 .menu a {
-    color: #495057;
+    color: #077cf0;
     text-decoration: none;
     font-size: 16px;
     padding: 10px 15px;
@@ -83,24 +83,38 @@ body {
     transform: translateY(-2px);
 }
 
+/* ========== LAYOUT PRINCIPAL - BANNER ========== */
+.container-layout {
+    height: auto;
+    display: flex; /* Habilita o modo de layout Flexbox */
+    max-width: 10px; /* Largura máxima da sua página */
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 20px 0;
+    gap: 0px; /* Espaço entre as duas colunas */
+}
+.right-sidebar-banner{
+   max-width: 50%;
+   height: auto;
+}
+
 /* ========== HEADER/HERO ========== */
 .header {
-    height: auto;
+    height: 100px;
     background: #f5f5f5;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px 5%;
-    min-height: 80vh;
+    height:350px;
 }
 
 .headline {
-    flex: 1;
+    flex: 100;
     max-width: 50%;
 }
 
 .headline h2 {
-    font-weight: 900;
+    font-weight: 300;
     color: #000;
     margin: 0 0 20px 0;
 }
@@ -237,9 +251,10 @@ footer {
     margin-top: 100px;
     background: #000;
     text-align: center;
-    border-top: 5px solid #333;
+    border-top: 5px solid gold;
     width: 100%;
-    padding: 60px 20px;
+    padding: 60px 0;
+    min-height: 10vh;
 }
 
 .logo-rodape {
