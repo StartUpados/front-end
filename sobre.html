@@ -5,20 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página sobre o projeto StartUpados">
     <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/ES.css">
     <title>Sobre - StartUpados</title>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">
-            <h1>StartUpados</h1>
-        </div>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="integrantes.html">Integrantes</a>
-            <a href="faq.html">Perguntas Frequentes</a>
-            <a id="botao" href="fale-conosco.html">Fale conosco</a>
-        </div> 
-    </nav>
+  <div class="logo">
+    <h1>StartUpados</h1>
+  </div>
+
+  <!-- Checkbox escondido -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <!-- Label que vira o botão hambúrguer -->
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- Menu de navegação -->
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="integrantes.html">Integrantes</a>
+    <a href="faq.html">Perguntas Frequentes</a>
+    <a id="botao" href="fale-conosco.html">Fale conosco</a>
+  </div>
+</nav>
 
     <header class="header">
         <section>

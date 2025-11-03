@@ -1,87 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site institucional da StartUpados - grupo de inovação e tecnologia">
-    <link rel="stylesheet" href="css/style.css">
-    <title>StartUpados</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site institucional da StartUpados - grupo de inovação e tecnologia">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ES.css">
+  <title>StartUpados</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <h1>StartUpados</h1>
-        </div>
-        <div class="menu">
-            <a href="integrantes.html">Integrantes</a>
-            <a href="sobre.html">Sobre nós</a>
-            <a href="faq.html">Perguntas Frequentes</a>
-            <a id="botao" href="fale-conoco.html">Fale conosco</a>
-        </div> 
-    </nav>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>StartUpados</h1>
+    </div>
 
-    <header class="header">
-        <div class="headline">
-            <h2 style="letter-spacing: 10px;">Inovação & Tecnologia</h2>
-            <h2 style="font-size: 70px;">Transformando Ideias</h2>
-            <p>A StartUpados é um grupo voltado para inovação, tecnologia e empreendedorismo. 
-            Nosso objetivo é desenvolver soluções criativas e acessíveis que impactem positivamente 
-            a sociedade e o mercado.</p>
-            <a class="contatic-btn" href="#">Saiba mais</a>
-        </div>
-        <div class="img-headline">
-            <!-- Espaço reservado para futura imagem/logo -->
-            <img style="max-width: 90%; margin-top: 48px;" src="" alt="Logo StartUpados">
-        </div>
-    </header> 
+    <!-- Checkbox escondido -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-    <section>
-        <h2>O que fazemos</h2>
-        <div class="servicos">
-            <div class="card">
-                <img src="img/projeto.png" alt="ícone de ideia">
-                <div class="card-text">
-                    <h3>Projetos Inovadores</h3>
-                    <p>Desenvolvemos soluções criativas em tecnologia e negócios, 
-                    sempre com foco em impacto real.</p>
-                </div>
-                <div class="texto-oculto">
-                    <h3>Exemplos</h3>
-                    <p>Aplicativos, plataformas digitais e protótipos de startups.</p>
-                </div>
-            </div>
+    <!-- Botão hambúrguer -->
+    <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-            <div class="card">
-                <img src="img/colab.png" alt="ícone de equipe">
-                <div class="card-text">
-                    <h3>Colaboração</h3>
-                    <p>Trabalhamos em equipe para transformar boas ideias em projetos viáveis.</p>
-                </div>
-                <div class="texto-oculto">
-                    <h3>Nosso diferencial</h3>
-                    <p>Integração de diferentes áreas: design, tecnologia e negócios.</p>
-                </div>
-            </div>
+    <!-- Menu DENTRO da navbar -->
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="integrantes.html">Integrantes</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="faq.html">Perguntas Frequentes</a>
+      <a id="botao" href="fale-conosco.html">Fale conosco</a>
+    </div>
+  </nav>
 
-            <div class="card">
-                <img src="img/conexao.png" alt="ícone de rede">
-                <div class="card-text">
-                    <h3>Conexões</h3>
-                    <p>Conectamos pessoas, empresas e oportunidades para gerar valor.</p>
-                </div>
-                <div class="texto-oculto">
-                    <h3>Impacto</h3>
-                    <p>Ampliamos redes de contato e criamos parcerias estratégicas.</p>
-                </div>
-            </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="headline">
+      <h2 style="letter-spacing: 10px;">Inovação & Tecnologia</h2>
+      <h2 style="font-size: 70px;">Transformando Ideias</h2>
+      <p>A StartUpados é um grupo voltado para inovação, tecnologia e empreendedorismo. 
+      Nosso objetivo é desenvolver soluções criativas e acessíveis que impactem positivamente 
+      a sociedade e o mercado.</p>
+      <a class="contatic-btn" href="#">Saiba mais</a>
+    </div>
+    <div class="img-headline">
+      <img style="max-width: 90%; margin-top: 48px;" src="" alt="Logo StartUpados">
+    </div>
+
+  <!-- Section -->
+  <section>
+    <h2>O que fazemos</h2>
+    <div class="servicos">
+      <div class="card">
+        <img src="img/projeto.png" alt="ícone de ideia">
+        <div class="card-text">
+          <h3>Projetos Inovadores</h3>
+          <p>Desenvolvemos soluções criativas em tecnologia e negócios, 
+          sempre com foco em impacto real.</p>
         </div>
-    </section>   
-
-    <footer>
-        <div class="logo-rodape">
-            <h1 class="agencia">StartUpados</h1>
-            <p style="color:white">Inovação e tecnologia para transformar o futuro</p>
+        <div class="texto-oculto">
+          <h3>Exemplos</h3>
+          <p>Aplicativos, plataformas digitais e protótipos de startups.</p>
         </div>
-    </footer>
+      </div>
+
+      <div class="card">
+        <img src="img/colab.png" alt="ícone de equipe">
+        <div class="card-text">
+          <h3>Colaboração</h3>
+          <p>Trabalhamos em equipe para transformar boas ideias em projetos viáveis.</p>
+        </div>
+        <div class="texto-oculto">
+          <h3>Nosso diferencial</h3>
+          <p>Integração de diferentes áreas: design, tecnologia e negócios.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/conexao.png" alt="ícone de rede">
+        <div class="card-text">
+          <h3>Conexões</h3>
+          <p>Conectamos pessoas, empresas e oportunidades para gerar valor.</p>
+        </div>
+        <div class="texto-oculto">
+          <h3>Impacto</h3>
+          <p>Ampliamos redes de contato e criamos parcerias estratégicas.</p>
+        </div>
+      </div>
+    </div>
+  </section>   
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo-rodape">
+      <h1 class="agencia">StartUpados</h1>
+      <p style="color:white">Inovação e tecnologia para transformar o futuro</p>
+    </div>
+  </footer>
 </body>
 </html>

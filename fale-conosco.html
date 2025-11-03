@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a StartUpados - estamos aqui para ajudar e ouvir suas ideias">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ES.css">
+    <link rel="stylesheet" href="css/fale-conosco.css">
+    <title>Fale Conosco - StartUpados</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>StartUpados</h1>
+        </div>
+
+        <!-- Checkbox escondido -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Botão hambúrguer -->
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Menu -->
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="integrantes.html">Integrantes</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="faq.html">Perguntas Frequentes</a>
+            <a id="botao" href="fale-conosco.html">Fale conosco</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header-faleconosco">
+        <div class="headline-faleconosco">
+            <h2>Fale Conosco</h2>
+            <p>Tem alguma dúvida, sugestão ou ideia inovadora? Entre em contato conosco!</p>
+        </div>
+    </header>
+
+    <!-- Section Formulário -->
+    <section class="contato-section">
+        <div class="contato-container">
+            <div class="form-container">
+                <h3>Envie sua mensagem</h3>
+                <form action="#" method="post" class="contato-form">
+                    <div class="form-group">
+                        <input type="text" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telefone" placeholder="Seu telefone (opcional)">
+                    </div>
+                    <div class="form-group">
+                        <select name="assunto" required>
+                            <option value="">Selecione o assunto</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="parceria">Proposta de Parceria</option>
+                            <option value="trabalho">Oportunidade de Trabalho</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensagem" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div class="info-container">
+                <h3>Outras formas de contato</h3>
+                <div class="info-item">
+                    <h4>📧 E-mail</h4>
+                    <p>contato@startupados.com</p>
+                </div>
+                <div class="info-item">
+                    <h4>📱 Telefone</h4>
+                    <p>(11) 9999-9999</p>
+                </div>
+                <div class="info-item">
+                    <h4>📍 Endereço</h4>
+                    <p>Av. Paulista, 1000<br>São Paulo - SP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo-rodape">
+            <h1 class="agencia">StartUpados</h1>
+            <p style="color:white">Inovação e tecnologia para transformar ideias em realidade</p>
+        </div>
+    </footer>
+</body>
+</html>

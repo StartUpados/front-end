@@ -3,57 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - StartUpados</title>
+    <meta name="description" content="Perguntas frequentes sobre a StartUpados - tire suas dúvidas sobre nosso trabalho">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ES.css">
     <link rel="stylesheet" href="css/faq.css">
+    <title>FAQ - StartUpados</title>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <h1>StartUpados</h1>
         </div>
+
+        <!-- Checkbox escondido -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Botão hambúrguer -->
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Menu -->
         <div class="menu">
             <a href="index.html">Home</a>
-            <a href="sobre.html">Sobre nós</a>
             <a href="integrantes.html">Integrantes</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="faq.html">Perguntas Frequentes</a>
             <a id="botao" href="fale-conosco.html">Fale conosco</a>
         </div>
     </nav>
 
-    <h1>StartUpados</h1>
-    <br>
-    <h2>Perguntas Frequentes</h2>
-    <br>
-
-    <section class="faq">
-        <div class="pergunta">
-            <h3>1. O que é a StartUpados?</h3>
-            <p class="resposta">
-                A StartUpados é um grupo de inovação e tecnologia que busca desenvolver soluções digitais criativas e acessíveis, conectando pessoas, empresas e oportunidades.
-            </p>
+    <!-- Header -->
+    <header class="header-faq">
+        <div class="headline-faq">
+            <h2>Perguntas Frequentes</h2>
+            <p>Encontre respostas para as dúvidas mais comuns sobre nosso trabalho</p>
         </div>
+    </header>
 
-        <div class="pergunta">
-            <h3>2. Como posso participar?</h3>
-            <p class="resposta">
-                Você pode se envolver como colaborador em projetos, parceiro estratégico ou apoiador. Entre em contato conosco para mais informações.
-            </p>
-        </div>
+    <!-- Section FAQ -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq1" class="faq-toggle">
+                <label for="faq1" class="faq-pergunta">
+                    <h3>O que é a StartUpados?</h3>
+                    <span class="faq-icon">+</span>
+                </label>
+                <div class="faq-resposta">
+                    <p>A StartUpados é um grupo de inovação e tecnologia que busca desenvolver soluções digitais criativas e acessíveis, conectando pessoas, empresas e oportunidades.</p>
+                </div>
+            </div>
 
-        <div class="pergunta">
-            <h3>3. Quais são os requisitos para integrar a equipe?</h3>
-            <p class="resposta">
-                Procuramos pessoas com espírito inovador, interesse em tecnologia e disposição para trabalhar em equipe.
-            </p>
-        </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq2" class="faq-toggle">
+                <label for="faq2" class="faq-pergunta">
+                    <h3>Como posso participar?</h3>
+                    <span class="faq-icon">+</span>
+                </label>
+                <div class="faq-resposta">
+                    <p>Você pode se envolver como colaborador em projetos, parceiro estratégico ou apoiador. Entre em contato conosco para mais informações.</p>
+                </div>
+            </div>
 
-        <div class="pergunta">
-            <h3>4. Onde posso encontrar mais informações?</h3>
-            <p class="resposta">
-                Mais informações podem ser encontradas em nosso site oficial ou entrando em contato através do nosso e-mail de suporte.
-            </p>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq3" class="faq-toggle">
+                <label for="faq3" class="faq-pergunta">
+                    <h3>Quais são os requisitos para integrar a equipe?</h3>
+                    <span class="faq-icon">+</span>
+                </label>
+                <div class="faq-resposta">
+                    <p>Procuramos pessoas com espírito inovador, interesse em tecnologia e disposição para trabalhar em equipe. Conhecimentos em programação, design ou gestão de projetos são bem-vindos.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq4" class="faq-toggle">
+                <label for="faq4" class="faq-pergunta">
+                    <h3>Onde posso encontrar mais informações?</h3>
+                    <span class="faq-icon">+</span>
+                </label>
+                <div class="faq-resposta">
+                    <p>Mais informações podem ser encontradas em nosso site oficial ou entrando em contato através do nosso e-mail de suporte. Também estamos ativos nas redes sociais.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq5" class="faq-toggle">
+                <label for="faq5" class="faq-pergunta">
+                    <h3>Quais tipos de projetos vocês desenvolvem?</h3>
+                    <span class="faq-icon">+</span>
+                </label>
+                <div class="faq-resposta">
+                    <p>Desenvolvemos aplicativos, plataformas web, sistemas de gestão e protótipos de startups. Focamos em soluções que resolvem problemas reais do mercado.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq6" class="faq-toggle">
+                <label for="faq6" class="faq-pergunta">
+                    <h3>Vocês trabalham com quais tecnologias?</h3>
+                    <span class="faq-icon">+</span>
+                </label>
+                <div class="faq-resposta">
+                    <p>Trabalhamos com HTML, CSS, JavaScript, React, Node.js, Python e diversas outras tecnologias modernas para desenvolvimento web e mobile.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="logo-rodape">
             <h1 class="agencia">StartUpados</h1>
