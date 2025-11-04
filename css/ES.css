@@ -1,40 +1,7 @@
-/* ========== TABLETS (1024px para baixo) ========== */
-@media (max-width: 1024px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 5%;
-    }
-    
-    .headline {
-        max-width: 100%;
-        margin-bottom: 40px;
-    }
-    
-    .img-headline {
-        max-width: 100%;
-    }
-    
-    .headline h2 {
-        font-size: 24px !important;
-        letter-spacing: 5px !important;
-    }
-    
-    .headline h2:last-of-type {
-        font-size: 50px !important;
-    }
-    
-    .servicos {
-        gap: 15px;
-    }
-    
-    .card {
-        min-width: 280px;
-        padding: 25px;
-    }
-}
+/* ========== RESPONSIVIDADE MOBILE ========== */
+/* Mobile: até 768px */
 
-/* ========== MOBILE (768px para baixo) ========== */
+/* ========== MOBILE GERAL (768px para baixo) ========== */
 @media (max-width: 768px) {
     body {
         padding-top: 60px;
@@ -46,92 +13,34 @@
         background: #fff;
     }
     
-    .logo h1 {
-        font-size: 24px;
+    .logo img {
+        height: 40px;
     }
     
-    /* Esconde menu desktop */
+    /* Esconde menu desktop e mostra hamburger */
     .menu {
         display: none;
     }
     
-    /* Mostra hamburger */
     .hamburger {
         display: flex;
-        flex-direction: column;
-        gap: 4px;
-        cursor: pointer;
-        padding: 8px;
-        z-index: 1001;
     }
     
-    .hamburger span {
-        width: 25px;
-        height: 3px;
-        background: #000;
-        transition: all 0.3s ease;
-    }
-    
-    /* Menu mobile quando aberto */
-    .menu-toggle:checked ~ .menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        border-top: 1px solid #ccc;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-        padding: 20px;
-        gap: 0;
-    }
-    
-    .menu a {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-        border-bottom: 1px solid #eee;
-        font-size: 16px;
-    }
-    
-    .menu a:last-child {
-        border-bottom: none;
-    }
-    
-    #botao {
-        margin: 10px 0;
-        background-color: #000;
-        color: white;
-    }
-    
-    #botao:hover {
-        background-color: #333;
-    }
-    
-    /* Animação hamburger para X */
-    .menu-toggle:checked + .hamburger span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-    }
-    
-    .menu-toggle:checked + .hamburger span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .menu-toggle:checked + .hamburger span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-    }
-    
-    /* Header mobile */
+    /* ========== HEADER MOBILE CORRIGIDO ========== */
     .header {
-        padding: 30px 20px;
+        padding: 30px 5%;
         min-height: auto;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
     }
     
     .headline {
         max-width: 100%;
-        text-align: center;
+        order: 1;
     }
     
     .headline h2 {
@@ -145,12 +54,27 @@
     }
     
     .headline p {
-        text-align: center;
         font-size: 14px;
         margin: 20px 0;
+        text-align: center;
     }
     
-    /* Section mobile */
+    .banner-container {
+        order: 2;
+        width: 100%;
+    }
+    
+    .banner-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .contatic-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    /* ========== SECTIONS MOBILE ========== */
     section {
         margin: 40px auto;
         padding: 0 20px;
@@ -179,123 +103,7 @@
         height: 50px;
     }
     
-    /* Footer mobile */
-    footer {
-        margin-top: 50px;
-        padding: 30px 20px;
-    }
-    
-    .agencia {
-        font-size: 28px;
-    }
-}
-
-/* ========== MOBILE PEQUENO (480px para baixo) ========== */
-@media (max-width: 480px) {
-    body {
-        padding-top: 60px;
-    }
-    
-    .navbar {
-        padding: 0 15px;
-    }
-    
-    .logo h1 {
-        font-size: 20px;
-    }
-    
-    .headline h2:last-of-type {
-        font-size: 28px !important;
-    }
-    
-    .headline h2 {
-        letter-spacing: 2px !important;
-        font-size: 16px !important;
-    }
-    
-    .headline p {
-        font-size: 13px;
-        margin: 15px 0;
-    }
-    
-    .contatic-btn {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-    
-    section {
-        margin: 30px auto;
-        padding: 0 15px;
-    }
-    
-    section h2 {
-        font-size: 26px;
-        margin-bottom: 20px;
-    }
-    
-    .card {
-        padding: 15px;
-    }
-    
-    .card-text h3,
-    .texto-oculto h3 {
-        font-size: 18px;
-    }
-    
-    .card-text p,
-    .texto-oculto p {
-        font-size: 14px;
-    }
-    
-    footer {
-        padding: 20px 15px;
-    }
-    
-    .agencia {
-        font-size: 24px;
-    }
-}
-
-/* ========== MOBILE MUITO PEQUENO (360px para baixo) ========== */
-@media (max-width: 360px) {
-    .headline h2:last-of-type {
-        font-size: 24px !important;
-    }
-    
-    .headline h2 {
-        letter-spacing: 1px !important;
-    }
-    
-    .menu a {
-        font-size: 14px;
-        padding: 12px;
-    }
-    
-    section h2 {
-        font-size: 22px;
-    }
-}
-
-/* ========== RESPONSIVIDADE INTEGRANTES ========== */
-
-/* Tablets */
-@media (max-width: 1024px) {
-    .headline-integrantes h2 {
-        font-size: 42px;
-    }
-    
-    .integrantes-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-    }
-    
-    .card-integrante {
-        padding: 25px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
+    /* ========== INTEGRANTES MOBILE ========== */
     .header-integrantes {
         padding: 80px 5% 40px;
         margin-top: 60px;
@@ -356,10 +164,183 @@
         padding: 12px 25px;
         font-size: 15px;
     }
+    
+    /* ========== FAQ MOBILE ========== */
+    .header-faq {
+        padding: 80px 5% 40px;
+        margin-top: 60px;
+    }
+    
+    .headline-faq h2 {
+        font-size: 36px;
+    }
+    
+    .headline-faq p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    
+    .faq-section {
+        padding: 40px 5%;
+    }
+    
+    .faq-pergunta {
+        padding: 20px;
+    }
+    
+    .faq-pergunta h3 {
+        font-size: 16px;
+    }
+    
+    .faq-icon {
+        font-size: 20px;
+    }
+    
+    .faq-resposta {
+        padding: 0 20px;
+    }
+    
+    .faq-toggle:checked ~ .faq-resposta {
+        padding: 0 20px;
+    }
+    
+    .faq-resposta p {
+        font-size: 14px;
+        padding: 0 0 20px 0;
+    }
+    
+    /* ========== FALE CONOSCO MOBILE ========== */
+    .header-faleconosco {
+        padding: 80px 5% 40px;
+        margin-top: 60px;
+    }
+    
+    .headline-faleconosco h2 {
+        font-size: 36px;
+    }
+    
+    .headline-faleconosco p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    
+    .contato-section {
+        padding: 40px 5%;
+    }
+    
+    .form-container {
+        padding: 30px;
+    }
+    
+    .form-container h3 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 14px;
+        font-size: 15px;
+    }
+    
+    .btn-enviar {
+        padding: 16px 30px;
+        font-size: 16px;
+    }
+    
+    /* ========== SOBRE MOBILE ========== */
+    .header-sobre {
+        padding: 80px 5% 40px;
+        margin-top: 60px;
+    }
+    
+    .headline-sobre h2 {
+        font-size: 36px;
+    }
+    
+    .sobre-section {
+        padding: 40px 5%;
+    }
+    
+    .sobre-content {
+        padding: 30px;
+    }
+    
+    .sobre-texto h3 {
+        font-size: 20px;
+        margin: 30px 0 15px 0;
+    }
+    
+    .sobre-texto p,
+    .sobre-texto li {
+        font-size: 16px;
+    }
+    
+    .sobre-texto ul {
+        padding-left: 20px;
+    }
+    
+    /* ========== FOOTER MOBILE ========== */
+    footer {
+        margin-top: 50px;
+        padding: 30px 20px;
+    }
+    
+    .agencia {
+        font-size: 28px;
+    }
 }
 
-/* Mobile Pequeno */
+/* ========== MOBILE PEQUENO (480px para baixo) ========== */
 @media (max-width: 480px) {
+    .header {
+        padding: 20px 5%;
+    }
+    
+    .headline h2:last-of-type {
+        font-size: 28px !important;
+    }
+    
+    .headline h2 {
+        letter-spacing: 2px !important;
+        font-size: 16px !important;
+    }
+    
+    .headline p {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+    
+    .banner-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    section {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+    
+    section h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    .card-text h3,
+    .texto-oculto h3 {
+        font-size: 18px;
+    }
+    
+    .card-text p,
+    .texto-oculto p {
+        font-size: 14px;
+    }
+    
     .header-integrantes {
         padding: 60px 5% 30px;
     }
@@ -404,243 +385,48 @@
     .git-geral p {
         font-size: 14px;
     }
-}
-
-
-/*faq responsividade*/
-/* Tablets (1024px para baixo) */
-@media (max-width: 1024px) {
-    .navbar {
-        padding: 0 3%;
-    }
     
-    .menu a {
-        font-size: 15px;
-        padding: 8px 12px;
-    }
-    
-    #botao {
-        padding: 8px 16px;
-        font-size: 15px;
-    }
-    
-    /* FAQ Tablets */
-    .headline-faq h2 {
-        font-size: 42px;
-    }
-    
-    .faq-pergunta {
-        padding: 20px 25px;
-    }
-    
-    .faq-pergunta h3 {
-        font-size: 18px;
-    }
-}
-
-/* Mobile (768px para baixo) */
-@media (max-width: 768px) {
-    body {
-        padding-top: 60px;
-    }
-    
-    .navbar {
-        height: 60px;
-        padding: 0 20px;
-        background: #fff;
-    }
-    
-    .logo h1 {
-        font-size: 24px;
-        color: #2c3e50;
-    }
-    
-    /* Esconde menu desktop */
-    .menu {
-        display: none;
-    }
-    
-    /* Mostra hamburger */
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        cursor: pointer;
-        padding: 8px;
-        z-index: 1001;
-    }
-    
-    .hamburger span {
-        width: 25px;
-        height: 3px;
-        background: #2c3e50;
-        transition: all 0.3s ease;
-    }
-    
-    /* Menu mobile quando aberto - Corrigido para cores mais claras */
-    .menu-toggle:checked ~ .menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        border-top: 1px solid #e9ecef;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        padding: 20px;
-        gap: 0;
-    }
-    
-    .menu a {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-        border-bottom: 1px solid #f1f3f5;
-        font-size: 16px;
-        color: #495057;
-        margin: 0;
-    }
-    
-    .menu a:last-child {
-        border-bottom: none;
-    }
-    
-    .menu a:hover {
-        background: #f8f9fa;
-        color: #2c3e50;
-    }
-    
-    #botao {
-        margin: 10px 0;
-        background-color: #2c3e50;
-        color: white;
-        width: 100%;
-        text-align: center;
-    }
-    
-    #botao:hover {
-        background-color: #34495e;
-    }
-    
-    /* Animação hamburger para X */
-    .menu-toggle:checked + .hamburger span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-        background: #2c3e50;
-    }
-    
-    .menu-toggle:checked + .hamburger span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .menu-toggle:checked + .hamburger span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-        background: #2c3e50;
-    }
-    
-    /* Header mobile FAQ */
     .header-faq {
-        padding: 80px 5% 40px;
-        margin-top: 60px;
+        padding: 60px 5% 30px;
     }
     
     .headline-faq h2 {
-        font-size: 36px;
+        font-size: 28px;
     }
     
     .headline-faq p {
-        font-size: 16px;
-        padding: 0 10px;
+        font-size: 14px;
     }
     
     .faq-section {
-        padding: 40px 5%;
+        padding: 30px 5%;
     }
     
     .faq-pergunta {
-        padding: 20px;
+        padding: 15px;
     }
     
     .faq-pergunta h3 {
-        font-size: 16px;
-    }
-    
-    .faq-icon {
-        font-size: 20px;
-    }
-    
-    .faq-resposta {
-        padding: 0 20px;
-    }
-    
-    .faq-toggle:checked ~ .faq-resposta {
-        padding: 0 20px;
-    }
-    
-    .faq-resposta p {
-        font-size: 14px;
-        padding: 0 0 20px 0;
-    }
-}
-
-/* ========== RESPONSIVIDADE FALE CONOSCO ========== */
-
-/* Tablets */
-@media (max-width: 1024px) {
-    .headline-faleconosco h2 {
-        font-size: 42px;
-    }
-    
-    .form-container {
-        padding: 40px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .header-faleconosco {
-        padding: 80px 5% 40px;
-        margin-top: 60px;
-    }
-    
-    .headline-faleconosco h2 {
-        font-size: 36px;
-    }
-    
-    .headline-faleconosco p {
-        font-size: 16px;
-        padding: 0 10px;
-    }
-    
-    .contato-section {
-        padding: 40px 5%;
-    }
-    
-    .form-container {
-        padding: 30px;
-    }
-    
-    .form-container h3 {
-        font-size: 24px;
-        margin-bottom: 30px;
-    }
-    
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        padding: 14px;
         font-size: 15px;
     }
     
-    .btn-enviar {
-        padding: 16px 30px;
-        font-size: 16px;
+    .faq-icon {
+        font-size: 18px;
     }
-}
-
-/* Mobile Pequeno */
-@media (max-width: 480px) {
+    
+    .faq-resposta {
+        padding: 0 15px;
+    }
+    
+    .faq-toggle:checked ~ .faq-resposta {
+        padding: 0 15px;
+    }
+    
+    .faq-resposta p {
+        font-size: 13px;
+        padding: 0 0 15px 0;
+    }
+    
     .header-faleconosco {
         padding: 60px 5% 30px;
     }
@@ -680,5 +466,43 @@
     
     .contato-form {
         gap: 20px;
+    }
+    
+    .header-sobre {
+        padding: 60px 5% 30px;
+    }
+    
+    .headline-sobre h2 {
+        font-size: 28px;
+    }
+    
+    .sobre-section {
+        padding: 30px 5%;
+    }
+    
+    .sobre-content {
+        padding: 20px;
+    }
+    
+    .sobre-texto h3 {
+        font-size: 18px;
+        margin: 25px 0 12px 0;
+    }
+    
+    .sobre-texto p,
+    .sobre-texto li {
+        font-size: 15px;
+    }
+    
+    .sobre-texto ul {
+        padding-left: 15px;
+    }
+    
+    footer {
+        padding: 20px 15px;
+    }
+    
+    .agencia {
+        font-size: 24px;
     }
 }

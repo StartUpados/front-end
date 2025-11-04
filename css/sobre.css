@@ -1,129 +1,63 @@
-* {
-    box-sizing: border-box;
-}
+/* ========== PÁGINA SOBRE ========== */
 
-body {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    background: #f5f5f5;
-    color: #333;
-}
-
-.txt {
-   font-size: 20px;
-   line-height: 1.6;
-   text-align: justify;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: left; 
-    align-items: center;
-    height: 80px;
-    padding: 0 5%;
-    background-color: #fff; /* branco sólido */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-/* Logo */
-.logo h1 {
-    font-family: "Lobster", sans-serif;
-    font-size: 28px;
-    color: #077cf0;
-    margin: 0;
-}
-
-/* Menu */
-.menu a {
-    color: #077cf0;
-    text-decoration: none;
-    justify-content: space-between;
-    font-size: 18px;
-    margin-left: 120px;
-    padding: 10px 15px;
-    gap: 30px;
-    transition: all 0.3s ease;
-}
-
-.menu a:hover {
-    color: #2c3e50; 
-    border-top: 3px solid #555; 
-    padding-top: 4px; 
-}
-
-/* Botão especial */
-#botao {
-    background-color: #077cf0;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-left: 20px;
-    transition: 0.3s;
-}
-
-#botao:hover {
-    background-color: gold;
-}
-
-/* Header */
-.header {
-   height: auto;
-   background: white;
-   display: flex;
-   align-items: center;
-   justify-content: center; 
-   padding-top: 40px;
-   margin-top: 0px;
-   font-family: "Lobster", sans-serif;
-}
-
-/* Seção */
-section {
-    display: inline-block;
+/* Header específico para Sobre */
+.header-sobre {
+    background: #f8f9fa;
+    padding: 100px 5% 60px;
+    text-align: center;
     margin-top: 80px;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
-    padding: 5%;
-    width: 90%;
 }
 
-section h2 {
-    width: 100%;
-    font-size: 40px;
-    margin: 0 0 30px 0;
+.headline-sobre h2 {
     font-family: "Lobster", sans-serif;
-    font-weight: bold;
-    color: #111;
-    
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: normal;
 }
 
-/* Rodapé */
-footer {
-    margin-top: 100px;
-    height: 150px;
-    background: #111;
-    text-align: center;
-    border-top: 5px solid gold;
-    display: flex;
-    justify-content: center;
-    
+/* Section Sobre */
+.sobre-section {
+    padding: 60px 5%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.logo-rodape {
-    padding: 20px;
-    color: white;
-    
+.sobre-content {
+    background: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
 }
 
-.agencia {
-    font-family: "Lobster", sans-serif;
+.sobre-texto h3 {
+    font-size: 24px;
     color: #077cf0;
-    font-size: 34px;
+    margin: 40px 0 20px 0;
+    font-weight: 600;
+}
+
+.sobre-texto h3:first-child {
+    margin-top: 0;
+}
+
+.sobre-texto p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #495057;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.sobre-texto ul {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.sobre-texto li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #495057;
+    margin-bottom: 10px;
 }
