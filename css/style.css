@@ -13,6 +13,7 @@ body {
     color: #333;
     padding-top: 80px;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* ========== NAVBAR CORRIGIDA ========== */
@@ -92,9 +93,10 @@ body {
     padding: 20px 0;
     gap: 0px; /* Espaço entre as duas colunas */
 }
-.right-sidebar-banner{
-   max-width: 50%;
-   height: auto;
+.right-sidebar-banner img{
+    width: 33vw;
+    height: 28.5vh;
+    object-fit: cover;
 }
 
 /* ========== HEADER/HERO ========== */
@@ -248,13 +250,12 @@ section h2 {
 
 /* ========== FOOTER ========== */
 footer {
-    margin-top: 100px;
+    margin-top: 0px;
     background: #000;
     text-align: center;
     border-top: 5px solid gold;
-    width: 100%;
-    padding: 60px 0;
-    min-height: 10vh;
+    width: 100vw;
+    padding: 5vh 0;
 }
 
 .logo-rodape {
@@ -265,14 +266,14 @@ footer {
 
 .agencia {
     font-family: "Lobster", sans-serif;
-    color: #fff;
+    color: #077cf0;
     font-size: 42px;
     margin-bottom: 15px;
     font-weight: normal;
 }
 
 footer p {
-    color: #fff;
+    color: #077cf0;
     font-size: 18px;
     margin: 0;
     opacity: 0.9;
@@ -281,6 +282,7 @@ footer p {
 /* ========== UTILITÁRIOS ========== */
 .hamburger {
     display: none;
+    color: #077cf0;
 }
 
 .menu-toggle {

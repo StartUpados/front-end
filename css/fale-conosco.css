@@ -5,7 +5,7 @@
     background: #f8f9fa;
     padding: 100px 5% 60px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .headline-faleconosco h2 {
@@ -97,7 +97,7 @@
 }
 
 .btn-enviar {
-    background: #2c3e50;
+    background: #077cf0;
     color: white;
     padding: 18px 40px;
     border: none;
@@ -111,7 +111,7 @@
 }
 
 .btn-enviar:hover {
-    background: #34495e;
+    background: green;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }

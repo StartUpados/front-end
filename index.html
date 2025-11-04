@@ -8,12 +8,27 @@
   <link rel="stylesheet" href="css/ES.css">
   <link rel="icon" type="image/png" href="./img/favicon.ico">
   <script src="./Script/script.js"></script>
+  <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "ec3f2bf0-2f49-4287-9eb0-e905588cfcf5", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "21b08e1d-325b-4f9f-a5fb-fb63dfe63d2c", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
   <title>Página inicial</title>
 </head>
 <body>
   <nav class="navbar">
     <div class="logo">
+      <a href="index.html">
       <img src="./img/header-250x80.png" alt="Logo StartUpados()">
+      </a>
     </div>
 
     <!-- Checkbox escondido -->
@@ -44,7 +59,7 @@
       <p>A StartUpados() é um grupo voltado para inovação, tecnologia e empreendedorismo. 
       Nosso objetivo é desenvolver soluções criativas e acessíveis que impactem positivamente 
       a sociedade e o mercado.</p>
-      <a class="contatic-btn" href="#">Saiba mais</a>
+      <a class="contatic-btn" href="./sobre.html">Saiba mais</a>
     </div>
     <section class="container-layout">
     

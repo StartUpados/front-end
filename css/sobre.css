@@ -72,14 +72,16 @@ body {
 }
 
 /* Header */
-/*.header {
+.header {
    height: auto;
    background: white;
    display: flex;
    align-items: center;
    justify-content: center; 
-   padding-top: 100px;
-}*/
+   padding-top: 40px;
+   margin-top: 0px;
+   font-family: "Lobster", sans-serif;
+}
 
 /* Seção */
 section {
@@ -120,6 +122,6 @@ footer {
 
 .agencia {
     font-family: "Lobster", sans-serif;
-    color: #fff;
+    color: #077cf0;
     font-size: 34px;
 }
