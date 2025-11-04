@@ -50,7 +50,7 @@
 .card-integrante:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    border-color: #000;
+    border-color: #077cf0;
 }
 
 .integrante-img {
@@ -64,7 +64,7 @@
 }
 
 .card-integrante:hover .integrante-img {
-    border-color: #000;
+    border-color: #077cf0;
 }
 
 .integrante-img img {
@@ -116,7 +116,7 @@
 }
 
 .btn-linkedin {
-    background-color: #0077b5;
+    background-color: #077cf0;
     color: white;
 }
 

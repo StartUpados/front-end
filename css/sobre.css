@@ -5,21 +5,21 @@
     background: #f8f9fa;
     padding: 100px 5% 60px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .headline-sobre h2 {
     font-family: "Lobster", sans-serif;
     font-size: 48px;
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: normal;
 }
 
 /* Section Sobre */
 .sobre-section {
     padding: 60px 5%;
-    max-width: 1000px;
+    width: 50vw;
     margin: 0 auto;
 }
 
