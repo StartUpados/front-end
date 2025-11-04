@@ -11,15 +11,18 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;
     color: #333;
-    padding-top: 80px;
+    padding-top: 75px;
     line-height: 1.6;
     overflow-x: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 /* ========== NAVBAR CORRIGIDA ========== */
 .navbar {
     display: flex;
-    height: 80px;
+    height: 85px;
     background-color: #fff;  
     justify-content: space-between;
     align-items: center;
@@ -50,7 +53,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-left: auto;
+    margin-left: 0 auto;
 }
 
 .menu a {
@@ -70,7 +73,7 @@ body {
 }
 
 #botao {
-    background-color: #2c3e50;
+    background-color: #077cf0;
     padding: 10px 20px;
     color: white;
     border-radius: 5px;
@@ -79,14 +82,14 @@ body {
 }
 
 #botao:hover {
-    background: #34495e;
+    background: gold;
     border-top: none;
     transform: translateY(-2px);
 }
 
 /* ========== LAYOUT PRINCIPAL - BANNER ========== */
 .container-layout {
-    height: auto;
+    height: 0 auto;
     display: flex; /* Habilita o modo de layout Flexbox */
     max-width: 10px; /* Largura máxima da sua página */
     margin: 0 auto; /* Centraliza o contêiner */
@@ -101,7 +104,9 @@ body {
 
 /* ========== HEADER/HERO ========== */
 .header {
-    height: 100px;
+    width: 100%;
+    height: 10px;
+    float: center;
     background: #f5f5f5;
     display: flex;
     align-items: center;
@@ -131,7 +136,7 @@ body {
 
 .contatic-btn {
     display: inline-block;
-    background-color: #000;
+    background-color: #077cf0;
     padding: 15px 25px;
     color: white;
     text-transform: uppercase;
@@ -143,7 +148,7 @@ body {
 }
 
 .contatic-btn:hover {
-    background-color: #555;
+    background-color: gold;
 }
 
 .img-headline {
@@ -187,7 +192,7 @@ section h2 {
     min-width: 300px;
     max-width: 350px;
     padding: 30px;
-    border: 1px solid #ccc;
+    border: 1px solid #077cf0;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
@@ -230,7 +235,7 @@ section h2 {
 }
 
 .card:hover {
-    background-color: #000;
+    background-color: #077cf0;
     color: white;
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -250,18 +255,20 @@ section h2 {
 
 /* ========== FOOTER ========== */
 footer {
-    margin-top: 0px;
-    background: #000;
+    margin-bottom: 0;
+    margin-top: 100px;
+    height: 150px;
+    background: #111;
     text-align: center;
     border-top: 5px solid gold;
-    width: 100vw;
-    padding: 5vh 0;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-rodape {
     color: white;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-bottom: 0;
 }
 
 .agencia {

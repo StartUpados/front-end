@@ -5,7 +5,7 @@
     background: #f8f9fa;
     padding: 100px 5% 60px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .headline-faq h2 {
@@ -72,12 +72,12 @@
 }
 
 .faq-pergunta:hover {
-    background: #f1f3f5;
+    background: #077cf0;
 }
 
 .faq-pergunta h3 {
     font-size: 20px;
-    color: #2c3e50;
+    color: #000;
     margin: 0;
     font-weight: 600;
     text-align: left;
@@ -103,7 +103,7 @@
 }
 
 .faq-resposta p {
-    color: #495057;
+    color: #000;
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
@@ -112,7 +112,7 @@
 
 /* Estado ativo (quando o checkbox está checked) */
 .faq-toggle:checked ~ .faq-pergunta {
-    background: #2c3e50;
+    background: #077cf0;
 }
 
 .faq-toggle:checked ~ .faq-pergunta h3 {
