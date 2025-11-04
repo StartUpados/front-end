@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Site institucional da StartUpados - grupo de inovação e tecnologia">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/MD.css">
   <link rel="stylesheet" href="css/ES.css">
   <link rel="icon" type="image/png" href="./img/favicon.ico">
   <script src="./Script/script.js"></script>
   <script>
   window.watsonAssistantChatOptions = {
-    integrationID: "ec3f2bf0-2f49-4287-9eb0-e905588cfcf5", // The ID of this integration.
-    region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "21b08e1d-325b-4f9f-a5fb-fb63dfe63d2c", // The ID of your service instance.
+    integrationID: "ec3f2bf0-2f49-4287-9eb0-e905588cfcf5",
+    region: "us-south",
+    serviceInstanceID: "21b08e1d-325b-4f9f-a5fb-fb63dfe63d2c",
     onLoad: async (instance) => { await instance.render(); }
   };
   setTimeout(function(){
@@ -27,7 +28,7 @@
   <nav class="navbar">
     <div class="logo">
       <a href="index.html">
-      <img src="./img/header-250x80.png" alt="Logo StartUpados()">
+        <img src="./img/header-250x80.png" alt="Logo StartUpados()">
       </a>
     </div>
 
@@ -41,7 +42,7 @@
       <span></span>
     </label>
 
-    <!-- Menu DENTRO da navbar -->
+    <!-- Menu -->
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="integrantes.html">Integrantes</a>
@@ -53,26 +54,19 @@
 
   <!-- Header -->
   <header class="header">
-    <div class="headline">
-      <h2 style="letter-spacing: 10px;">Inovação & Tecnologia</h2>
-      <h2 style="font-size: 70px;">Transformando Idéias</h2>
-      <p>A StartUpados() é um grupo voltado para inovação, tecnologia e empreendedorismo. 
-      Nosso objetivo é desenvolver soluções criativas e acessíveis que impactem positivamente 
-      a sociedade e o mercado.</p>
-      <a class="contatic-btn" href="./sobre.html">Saiba mais</a>
+    <div class="header-content">
+      <div class="headline">
+        <h2 style="letter-spacing: 10px;">Inovação & Tecnologia</h2>
+        <h2 style="font-size: 70px;">Transformando Idéias</h2>
+        <p>A StartUpados() é um grupo voltado para inovação, tecnologia e empreendedorismo. 
+        Nosso objetivo é desenvolver soluções criativas e acessíveis que impactem positivamente 
+        a sociedade e o mercado.</p>
+        <a class="contatic-btn" href="./sobre.html">Saiba mais</a>
+      </div>
+      <div class="banner-container">
+        <img src="./img/banner-lateral-index.png" alt="Banner Lateral" class="banner-image">
+      </div>
     </div>
-    <section class="container-layout">
-    
-    <div class="main-content">
-        </div>
-    
-    <aside class="right-sidebar-banner">
-        <a href="#">
-            <img src="./img/banner-lateral-index.png" alt="Banner Lateral">
-        </a>
-        </aside>
-
-</section>
   </header>
 
   <!-- Section -->
@@ -82,7 +76,7 @@
       <div class="card">
         <img src="img/projeto.png" alt="ícone de ideia">
         <div class="card-text">
-          <h3>Desenvolvimento de Projetos</h3>
+          <h3>Projetos Inovadores</h3>
           <p>Desenvolvemos soluções criativas em tecnologia e negócios, 
           sempre com foco em impacto real.</p>
         </div>

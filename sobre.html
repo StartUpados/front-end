@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página sobre o projeto StartUpados">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/MD.css">
     <link rel="stylesheet" href="css/ES.css">
     <link rel="icon" type="image/png" href="./img/favicon.ico">
     <script>
   window.watsonAssistantChatOptions = {
-    integrationID: "ec3f2bf0-2f49-4287-9eb0-e905588cfcf5", // The ID of this integration.
-    region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "21b08e1d-325b-4f9f-a5fb-fb63dfe63d2c", // The ID of your service instance.
+    integrationID: "ec3f2bf0-2f49-4287-9eb0-e905588cfcf5",
+    region: "us-south",
+    serviceInstanceID: "21b08e1d-325b-4f9f-a5fb-fb63dfe63d2c",
     onLoad: async (instance) => { await instance.render(); }
   };
   setTimeout(function(){
@@ -24,116 +26,94 @@
 </head>
 <body>
     <nav class="navbar">
-  <div class="logo">
-    <a href="index.html">
-    <img src="./img/header-250x80.png" alt="Logo StartUpados()">
-    </a>
-  </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/header-250x80.png" alt="Logo StartUpados()">
+            </a>
+        </div>
 
-  
+        <!-- CHECKBOX QUE ESTAVA FALTANDO -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-  <!-- Label que vira o botão hambúrguer -->
-  <label for="menu-toggle" class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
+        <!-- Botão hambúrguer -->
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-  <!-- Menu de navegação -->
-  <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="integrantes.html">Integrantes</a>
-    <a href="faq.html">Perguntas Frequentes</a>
-    <a id="botao" href="fale-conosco.html">Fale conosco</a>
-  </div>
-</nav>
+        <!-- Menu de navegação -->
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="integrantes.html">Integrantes</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="faq.html">Perguntas Frequentes</a>
+            <a id="botao" href="fale-conosco.html">Fale conosco</a>
+        </div>
+    </nav>
 
-    <header class="header">
-        <section>
-            <h2><i>Conheça a StartUpados() :</i></h2>
-            <br>
-            <div class="servicos">
-                <p class="txt">
-                    🏢 <strong>Sobre nós:</strong>
-                    <br>
-                    <br>
+    <header class="header-sobre">
+        <div class="headline-sobre">
+            <h2>Conheça a StartUpados()</h2>
+        </div>
+    </header>
+
+    <section class="sobre-section">
+        <div class="sobre-content">
+            <div class="sobre-texto">
+                <h3>🏢 Sobre nós:</h3>
+                <p>
                     A StartUpados() nasceu com o propósito de impulsionar o acesso à tecnologia e criar conexões inteligentes entre pessoas, empresas e oportunidades. Somos uma plataforma digital inovadora, desenvolvida para oferecer soluções eficientes, centralizadas e acessíveis, apoiando o crescimento de indivíduos, empreendedores e organizações que desejam transformar ideias em resultados concretos.
-
-Nosso ecossistema integra funcionalidades como cadastro e gestão de usuários, conexão com profissionais e voluntários, agendamento de serviços e um ambiente inteligente de comunicação e suporte. Buscamos tornar a tecnologia um meio simples, acessível e poderoso para quem deseja evoluir, empreender e impactar positivamente o mundo ao seu redor.
-<br>
-<br>
-
-
-🎯 <strong>Visão:</strong>
-<br>
-<br>
-
-
-Ser referência em soluções digitais acessíveis e inovadoras, promovendo inclusão tecnológica e ampliando oportunidades para todos que desejam desenvolver seus projetos, negócios e habilidades.
-<br>
-<br>
-
-
-🌟<strong>Missão:</strong>
-<br>
-<br>
-
-Desenvolver plataformas modernas e eficientes que conectem pessoas, conhecimento e oportunidades, simplificando processos e fortalecendo comunidades por meio da tecnologia, inovação e colaboração.
-<br>
-<br>
-
-💡<strong>Valores:</strong>
-<br>
-<br>
-
-Inovação contínua
-
-Simplicidade e acessibilidade
-
-Transparência e ética
-
-Colaboração e empatia
-
-Empreendedorismo e protagonismo
-
-Impacto social e responsabilidade
-
-Qualidade e segurança.
-<br>
-<br>
-
-🤝<strong>Nosso compromisso:</strong>
-<br>
-<br>
-
-✅ Oferecer uma experiência intuitiva, segura e eficiente.
-<br>
-✅ Criar oportunidades reais através da tecnologia.
-<br>
-✅ Valorizar cada usuário, respeitando suas necessidades e sonhos.
-<br>
-✅ Evoluir constantemente com foco em qualidade e inovação.
-<br>
-✅ Atuar com responsabilidade social e tecnológica.
-<br>
-<br>
-
-🚀 <strong>Quem queremos ser:</strong>
-<br>
-<br>
-
-Mais do que uma plataforma, queremos ser um movimento de transformação — uma ponte entre quem sonha e quem realiza, entre quem ensina e quem aprende, entre quem precisa e quem pode ajudar.
-
-Acreditamos que a tecnologia só faz sentido quando está ao alcance de todos, e trabalhamos para transformar esse propósito em realidade diariamente
                 </p>
-                <p class="txt">
+                <p>
+                    Nosso ecossistema integra funcionalidades como cadastro e gestão de usuários, conexão com profissionais e voluntários, agendamento de serviços e um ambiente inteligente de comunicação e suporte. Buscamos tornar a tecnologia um meio simples, acessível e poderoso para quem deseja evoluir, empreender e impactar positivamente o mundo ao seu redor.
+                </p>
+
+                <h3>🎯 Visão:</h3>
+                <p>
+                    Ser referência em soluções digitais acessíveis e inovadoras, promovendo inclusão tecnológica e ampliando oportunidades para todos que desejam desenvolver seus projetos, negócios e habilidades.
+                </p>
+
+                <h3>🌟 Missão:</h3>
+                <p>
+                    Desenvolver plataformas modernas e eficientes que conectem pessoas, conhecimento e oportunidades, simplificando processos e fortalecendo comunidades por meio da tecnologia, inovação e colaboração.
+                </p>
+
+                <h3>💡 Valores:</h3>
+                <ul>
+                    <li>Inovação contínua</li>
+                    <li>Simplicidade e acessibilidade</li>
+                    <li>Transparência e ética</li>
+                    <li>Colaboração e empatia</li>
+                    <li>Empreendedorismo e protagonismo</li>
+                    <li>Impacto social e responsabilidade</li>
+                    <li>Qualidade e segurança</li>
+                </ul>
+
+                <h3>🤝 Nosso compromisso:</h3>
+                <ul>
+                    <li>Oferecer uma experiência intuitiva, segura e eficiente.</li>
+                    <li>Criar oportunidades reais através da tecnologia.</li>
+                    <li>Valorizar cada usuário, respeitando suas necessidades e sonhos.</li>
+                    <li>Evoluir constantemente com foco em qualidade e inovação.</li>
+                    <li>Atuar com responsabilidade social e tecnológica.</li>
+                </ul>
+
+                <h3>🚀 Quem queremos ser:</h3>
+                <p>
+                    Mais do que uma plataforma, queremos ser um movimento de transformação — uma ponte entre quem sonha e quem realiza, entre quem ensina e quem aprende, entre quem precisa e quem pode ajudar.
+                </p>
+                <p>
+                    Acreditamos que a tecnologia só faz sentido quando está ao alcance de todos, e trabalhamos para transformar esse propósito em realidade diariamente.
+                </p>
+                <p>
                     Além disso, planejamos estruturar um banco de dados robusto para gerenciar informações de forma 
                     eficiente e segura, garantindo praticidade e confiabilidade para todos os envolvidos. 
                     Nosso foco é transformar ideias em realidade, sempre com inovação, tecnologia e impacto positivo.
                 </p>
             </div>
-        </section>
-    </header> 
+        </div>
+    </section>
 
     <footer>
         <div class="logo-rodape">
