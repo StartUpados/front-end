@@ -1,6 +1,3 @@
-/* ========== PÁGINA SOBRE ========== */
-
-/* Header específico para Sobre */
 .header-sobre {
     background: #f8f9fa;
     padding: 100px 5% 60px;
@@ -16,7 +13,6 @@
     font-weight: normal;
 }
 
-/* Section Sobre */
 .sobre-section {
     padding: 60px 5%;
     width: 50vw;

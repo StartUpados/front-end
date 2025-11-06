@@ -9,23 +9,9 @@
     <link rel="stylesheet" href="css/ES.css">
     <link rel="stylesheet" href="css/integrantes.css">
     <link rel="icon" type="image/png" href="./img/favicon-ok-.png.png">
-    <script>
-  window.watsonAssistantChatOptions = {
-    integrationID: "ec3f2bf0-2f49-4287-9eb0-e905588cfcf5", // The ID of this integration.
-    region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "21b08e1d-325b-4f9f-a5fb-fb63dfe63d2c", // The ID of your service instance.
-    onLoad: async (instance) => { await instance.render(); }
-  };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
-</script>
-    <title>Integrantes - StartUpados()</title>
+    <title>Integrantes | StartUpados()</title>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <a href="index.html">
@@ -33,17 +19,12 @@
             </a>
         </div>
 
-        <!-- Checkbox escondido -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-        <!-- Botão hambúrguer -->
         <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
             <span></span>
             <span></span>
             <span></span>
         </label>
 
-        <!-- Menu -->
         <div class="menu">
             <a href="index.html">Home</a>
             <a href="integrantes.html">Integrantes</a>
@@ -53,7 +34,6 @@
         </div>
     </nav>
 
-    <!-- Header -->
     <header class="header-integrantes">
         <div class="headline-integrantes">
             <h2>Nossa Equipe:</h2>
@@ -61,7 +41,6 @@
         </div>
     </header>
 
-    <!-- Section Integrantes -->
     <section class="integrantes-section">
         <div class="integrantes-grid">
             <div class="card-integrante">
@@ -111,7 +90,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="logo-rodape">
             <a href="index.html">
@@ -119,5 +97,19 @@
             <p style="color:white">Inovação e tecnologia para transformar idéias em realidade💡</p>
         </div>
     </footer>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+        integrationID: "ec3f2bf0-2f49-4287-9eb0-e905588cfcf5", 
+        region: "us-south", 
+        serviceInstanceID: "21b08e1d-325b-4f9f-a5fb-fb63dfe63d2c",
+        onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+        });
+    </script>
 </body>
 </html>

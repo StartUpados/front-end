@@ -1,6 +1,3 @@
-/* ========== PÁGINA FALE CONOSCO ========== */
-
-/* Header específico para Fale Conosco */
 .header-faleconosco {
     background: #f8f9fa;
     padding: 100px 5% 60px;
@@ -23,7 +20,6 @@
     margin: 0 auto;
 }
 
-/* Section Contato */
 .contato-section {
     padding: 60px 5%;
     max-width: 1200px;
@@ -40,7 +36,6 @@
     justify-content: center;
 }
 
-/* Container do Formulário */
 .form-container {
     background: #fff;
     padding: 50px;

@@ -1,6 +1,3 @@
-/* ========== PÁGINA FAQ ========== */
-
-/* Header específico para FAQ */
 .header-faq {
     background: #f8f9fa;
     padding: 100px 5% 60px;
@@ -23,7 +20,6 @@
     margin: 0 auto;
 }
 
-/* Section FAQ */
 .faq-section {
     padding: 60px 5%;
     max-width: 1000px;
@@ -51,7 +47,6 @@
     background: #f8f9fa;
 }
 
-/* Esconde completamente o checkbox */
 .faq-toggle {
     position: absolute;
     opacity: 0;
@@ -110,7 +105,6 @@
     padding: 0 0 25px 0;
 }
 
-/* Estado ativo (quando o checkbox está checked) */
 .faq-toggle:checked ~ .faq-pergunta {
     background: #077cf0;
 }

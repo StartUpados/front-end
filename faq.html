@@ -9,23 +9,9 @@
     <link rel="stylesheet" href="css/ES.css">
     <link rel="stylesheet" href="css/faq.css">
     <link rel="icon" type="image/png" href="./img/favicon-ok-.png.png">
-    <script>
-  window.watsonAssistantChatOptions = {
-    integrationID: "ec3f2bf0-2f49-4287-9eb0-e905588cfcf5", // The ID of this integration.
-    region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "21b08e1d-325b-4f9f-a5fb-fb63dfe63d2c", // The ID of your service instance.
-    onLoad: async (instance) => { await instance.render(); }
-  };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
-</script>
-    <title>FAQ</title>
+    <title>FAQ | StartUpados()</title>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <a href="index.html">
@@ -33,17 +19,14 @@
             </a>
         </div>
 
-        <!-- Checkbox escondido -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-        <!-- Botão hambúrguer -->
         <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
             <span></span>
             <span></span>
             <span></span>
         </label>
 
-        <!-- Menu -->
         <div class="menu">
             <a href="index.html">Home</a>
             <a href="integrantes.html">Integrantes</a>
@@ -53,7 +36,6 @@
         </div>
     </nav>
 
-    <!-- Header -->
     <header class="header-faq">
         <div class="headline-faq">
             <h2>Perguntas Frequentes:</h2>
@@ -61,10 +43,8 @@
         </div>
     </header>
 
-    <!-- Section FAQ -->
     <section class="faq-section">
         <div class="faq-container">
-            <!-- FAQ Item 1 -->
             <div class="faq-item">
                 <input type="checkbox" id="faq1" class="faq-toggle">
                 <label for="faq1" class="faq-pergunta">
@@ -73,10 +53,10 @@
                 </label>
                 <div class="faq-resposta">
                     <p><strong>A StartUpados é um grupo de inovação e tecnologia que busca desenvolver soluções digitais criativas e acessíveis, conectando pessoas, empresas e oportunidades.</p>
-                </strong></div>
+                    </strong>
+                </div>
             </div>
 
-            <!-- FAQ Item 2 -->
             <div class="faq-item">
                 <input type="checkbox" id="faq2" class="faq-toggle">
                 <label for="faq2" class="faq-pergunta">
@@ -85,10 +65,10 @@
                 </label>
                 <div class="faq-resposta">
                     <p><strong>Você pode se envolver como colaborador em projetos, parceiro estratégico ou apoiador. Entre em contato conosco para mais informações.</p>
-                </strong></div>
+                    </strong>
+                </div>
             </div>
 
-            <!-- FAQ Item 3 -->
             <div class="faq-item">
                 <input type="checkbox" id="faq3" class="faq-toggle">
                 <label for="faq3" class="faq-pergunta">
@@ -97,10 +77,10 @@
                 </label>
                 <div class="faq-resposta">
                     <p><strong>Procuramos pessoas com espírito inovador, interesse em tecnologia e disposição para trabalhar em equipe. Conhecimentos em programação, design ou gestão de projetos são bem-vindos.</p>
-                </strong></div>
+                    </strong>
+                </div>
             </div>
 
-            <!-- FAQ Item 4 -->
             <div class="faq-item">
                 <input type="checkbox" id="faq4" class="faq-toggle">
                 <label for="faq4" class="faq-pergunta">
@@ -109,10 +89,10 @@
                 </label>
                 <div class="faq-resposta">
                     <p><strong>Mais informações podem ser encontradas em nosso site oficial ou entrando em contato através do nosso e-mail de suporte. Também estamos ativos nas redes sociais.</p>
-                </strong></div>
+                    </strong>
+                </div>
             </div>
 
-            <!-- FAQ Item 5 -->
             <div class="faq-item">
                 <input type="checkbox" id="faq5" class="faq-toggle">
                 <label for="faq5" class="faq-pergunta">
@@ -121,10 +101,10 @@
                 </label>
                 <div class="faq-resposta">
                     <p><strong>Desenvolvemos aplicativos, plataformas web, sistemas de gestão e protótipos de startups. Focamos em soluções que resolvem problemas reais do mercado.</p>
-                </strong></div>
+                    </strong>
+                </div>
             </div>
 
-            <!-- FAQ Item 6 -->
             <div class="faq-item">
                 <input type="checkbox" id="faq6" class="faq-toggle">
                 <label for="faq6" class="faq-pergunta">
@@ -133,12 +113,12 @@
                 </label>
                 <div class="faq-resposta">
                     <p><strong>Trabalhamos com HTML, CSS, JavaScript, React, Node.js, Python e diversas outras tecnologias modernas para desenvolvimento web e mobile.</p>
-                </strong></div>
+                    </strong>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="logo-rodape">
             <a href="index.html">
@@ -146,5 +126,19 @@
             <p style="color:white">Inovação e tecnologia para transformar idéias em realidade💡</p>
         </div>
     </footer>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+        integrationID: "ec3f2bf0-2f49-4287-9eb0-e905588cfcf5",
+        region: "us-south",
+        serviceInstanceID: "21b08e1d-325b-4f9f-a5fb-fb63dfe63d2c",
+        onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+        });
+    </script>
 </body>
 </html>
