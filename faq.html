@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/LG.css">
     <link rel="stylesheet" href="css/faq.css">
     <link rel="icon" type="image/png" href="./img/favicon-ok-.png.png">
+    <script src="Script/script.js"></script>
     <title>FAQ | StartUpados()</title>
 </head>
 <body>
@@ -20,16 +21,15 @@
             </a>
         </div>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu" onclick="ExibirMenu()">
             <span></span>
             <span></span>
             <span></span>
         </label>
 
-        <div class="menu">
+        <div class="menu" id="menu">
             <a href="index.html">Home</a>
+            <a href="nossos-servicos.html">Nossos Serviços</a>
             <a href="integrantes.html">Integrantes</a>
             <a href="sobre.html">Sobre nós</a>
             <a href="faq.html">Perguntas Frequentes</a>

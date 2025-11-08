@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/LG.css">
     <link rel="stylesheet" href="css/fale-conosco.css">
     <link rel="icon" type="image/png" href="./img/favicon-ok-.png.png">
+    <script src="Script/script.js"></script>
     <title>Fale Conosco!</title>
 </head>
 
@@ -21,14 +22,15 @@
             </a>
         </div>
 
-        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu" onclick="ExibirMenu()">
             <span></span>
             <span></span>
             <span></span>
         </label>
 
-        <div class="menu">
+        <div class="menu" id="menu">
             <a href="index.html">Home</a>
+            <a href="nossos-servicos.html">Nossos Serviços</a>
             <a href="integrantes.html">Integrantes</a>
             <a href="sobre.html">Sobre nós</a>
             <a href="faq.html">Perguntas Frequentes</a>
@@ -43,11 +45,11 @@
         </div>
     </header>
 
-    <section class="contato-section">
+    <section class="contato-section" id="contato-section">
         <div class="contato-container">
             <div class="form-container">
                 <h3>Envie sua mensagem👇</h3>
-                <form action="#" method="post" class="contato-form">
+                <form action="#" method="post" class="contato-form" onsubmit="MudarDiv(),CorrigirErro(event)">
                     <div class="form-group">
                         <input type="text" name="nome" placeholder="Seu nome completo" required>
                     </div>
@@ -97,6 +99,11 @@
         t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
         document.head.appendChild(t);
         });
+
+       function CorrigirErro(event) {
+            event.preventDefault();
+        }
+        
     </script>
 </body>
 </html>
