@@ -13,6 +13,7 @@ function MudarDiv() {
   section.style.padding = "60px";
 }
 
+
 function ExibirMenu() {
     var menu = document.getElementById("menu");
     var links = document.querySelectorAll(".menu a");
