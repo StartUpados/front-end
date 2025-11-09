@@ -26,9 +26,9 @@ A **StartUpados()** é uma plataforma digital inovadora desenvolvida para conect
 ## 👥 Integrantes da Equipe
 
 ### Desenvolvimento
-- **Pedro Henrique Falchi** -
-- **Matheus Guimarães** - 
-- **Leandro da Silva Santos** -
+- **Pedro Henrique Falchi**     rm566967
+- **Matheus Guimarães**         rm567912
+- **Leandro da Silva Santos**   rm567370
 
 StartUpados/
 │
