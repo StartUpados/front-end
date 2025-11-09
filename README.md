@@ -114,5 +114,7 @@ LG (Large): Desktops (acima de 1200px)
 
 🔗 Links do Projeto
 
+https://github.com/StartUpados/front-end/tree/65d761ae3c1b4e2a248d0b7bed9b05a72911766d
+
 
 
